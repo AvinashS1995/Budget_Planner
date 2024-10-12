@@ -1,0 +1,24 @@
+<app-side-nav></app-side-nav>
+<div class="container">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <span class="icon income-icon"><mat-icon>attach-money</mat-icon></span>
+                <h2>Income</h2>
+            </div>
+            <hr>
+            <div class="income-details">
+                <div class="month">
+                    <h3>Last Few Months</h3>
+                    <ul>
+                        <li *ngFor="let monthIncome of lastMonthsIncome">{{ monthIncome }}</li>
+                    </ul>
+                </div>
+                <div class="month">
+                    <h3>Current Months</h3>
+                    <p>{{ currentMonthIncome }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
